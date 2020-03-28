@@ -1,0 +1,36 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: "Hiragino Kaku Gothic";
+}
+.container{
+  max-width: 1000px;
+  width: 100%;
+  margin:0 auto;
+  padding:0;
+  display: block;
+}
+.table1,.table2{
+  width: auto;
+  margin: 0 auto;
+}
+caption{
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+th{
+  width: 200px;
+  height: 300px;
+}
+td{
+  vertical-align: top;
+}
+h1{
+  text-align: center;
+}
+.btn{
+  padding-top: 20px;
+}
+.th-11{
+  height: 50px;
+}
