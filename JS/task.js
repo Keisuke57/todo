@@ -8,15 +8,25 @@ document.addEventListener('DOMContentLoaded',function(){
     //テキストノードを生成して、<li>要素の直下に追加
     var text = document.createTextNode(answer.value);
     list.appendChild(text);
+    //テキストボックスの中身をリセット
+    answer.value="";
     //<i class="far fa-trash-alt">を生成
     var i = document.createElement('i');
-    var class = document.createAttribute('class');
-    class.value = "far fa-trash-alt";
-    i.setAttributeNode(class);
+    var addclass = document.createAttribute('class');
+    addclass.value="far fa-trash-alt";
+    i.setAttributeNode(addclass);
+    list.appendChild(i);
     //<div id="task">を取得
     var task = document.getElementById('task');
-    //<div>要素の直下に<li>/<i>/<br>要素の順番で追加
+    //<div>要素の直下に<li>/<i>要素の順番で追加
     task.appendChild(list);
-    task.appendChild(i);
+
+    //<i>要素をクリックしたらテキストが削除される処理
+    i.addEventListener('click',function(){
+      task.removeChild(task.lastChild);
+      far.disabled = true;
+    },false);
+
   },false);
+
 },false);
