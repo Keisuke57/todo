@@ -8,16 +8,15 @@ document.addEventListener('DOMContentLoaded',function(){
     //テキストノードを生成して、<li>要素の直下に追加
     var text = document.createTextNode(answer.value);
     list.appendChild(text);
-    //<br>要素を生成
-    var br = document.createElement('br');
     //<i class="far fa-trash-alt">を生成
-    var span = document.createElement('span');
-    span.classList.add("far fa-trash-alt");
+    var i = document.createElement('i');
+    var class = document.createAttribute('class');
+    class.value = "far fa-trash-alt";
+    i.setAttributeNode(class);
     //<div id="task">を取得
     var task = document.getElementById('task');
     //<div>要素の直下に<li>/<i>/<br>要素の順番で追加
     task.appendChild(list);
-    task.appendChild(span);
-    task.appendChild(br);
+    task.appendChild(i);
   },false);
 },false);
