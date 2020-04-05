@@ -29,11 +29,12 @@ h1{
   text-align: center;
 }
 .btn{
-  padding-top: 20px;
+  margin-top: 20px;
 }
 .th-11{
   height: 50px;
 }
-.task1{
-  font-size: 15px;
+.far{
+  font-size: 25px;
+  color:black;
 }
