@@ -1,8 +1,8 @@
 alert("hello");
 document.addEventListener('DOMContentLoaded',function(){
-  document.getElementById('btn').addEventListener('click',function(){
+  document.getElementById('btn1').addEventListener('click',function(){
     //テキストボックスの値を取得
-    var answer = document.getElementById('answer');
+    var answer = document.getElementById('answer1');
     //<li>要素を生成
     var list = document.createElement('li');
     //テキストノードを生成して、<li>要素の直下に追加
@@ -17,14 +17,13 @@ document.addEventListener('DOMContentLoaded',function(){
     i.setAttributeNode(addclass);
     list.appendChild(i);
     //<div id="task">を取得
-    var task = document.getElementById('task');
+    var task = document.getElementById('task1');
     //<div>要素の直下に<li>/<i>要素の順番で追加
     task.appendChild(list);
 
     //<i>要素をクリックしたらテキストが削除される処理
     i.addEventListener('click',function(){
-      task.removeChild(task.lastChild);
-      far.disabled = true;
+      task.removeChild(list);
     },false);
 
   },false);
