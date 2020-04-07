@@ -10,7 +10,7 @@ body{
   padding:0;
   display: block;
 }
-.tableOfBase,.tableOfPractice{
+.tableOfBase,.tableOfPractice,.btn{
   width: 1000px;
   margin: 0 auto;
   table-layout: fixed;
@@ -34,7 +34,7 @@ p{
   margin: 0;
 }
 .btn{
-  margin-top: 20px;
+  position: relative;
 }
 .th-11{
   height: 50px;
@@ -43,6 +43,11 @@ p{
   font-size: 25px;
   color:black;
   cursor: pointer;
+}
+#complete{
+  padding:15px;
+  position: absolute;
+  top: 20px;
 }
 .complete{
   display:none;
