@@ -1,5 +1,8 @@
+*{
+  box-sizing: border-box;
+}
 body{
-  margin: 0;
+  margin: 0px 0px 20px 0px;
   padding: 0;
   font-family: "Hiragino Kaku Gothic";
 }
@@ -28,6 +31,10 @@ td{
 }
 h1{
   text-align: center;
+}
+.title{
+  width: 100%;
+  margin:0 auto;
 }
 p{
   padding: 0;
