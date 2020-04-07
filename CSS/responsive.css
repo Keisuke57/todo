@@ -2,4 +2,8 @@
   *{
     width: auto;
   }
+  #complete{
+    display:block;
+    width:100%;
+  }
 }
