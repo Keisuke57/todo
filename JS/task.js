@@ -1,4 +1,3 @@
-alert("javascriptが正常に動作しました")
 document.addEventListener('DOMContentLoaded',function(){
   function addAndRemove(answer,task){
     //テキストボックスの値を取得
