@@ -2,6 +2,9 @@
   *{
     width: auto;
   }
+  body{
+    height:1200px;
+  }
   .tableOfBase,.tableOfPractice,.btn{
     width: 380px;
     margin: 0 auto;
