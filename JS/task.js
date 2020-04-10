@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded',function(){
     list.appendChild(text);
     //テキストボックスの中身をリセット
     answer.value="";
-    //<i class="far fa-trash-alt">を生成
+    //<span class="far fa-trash-alt">を生成
     var span = document.createElement('span');
     var addclass = document.createAttribute('class');
     addclass.value="far fa-trash-alt";
@@ -20,32 +20,11 @@ document.addEventListener('DOMContentLoaded',function(){
     //<div>要素の直下に<li>/<i>要素の順番で追加
     task.appendChild(list);
 
-    //<i>要素をクリックしたらテキストが削除される処理
+    //<span>要素をクリックしたらテキストが削除される処理
     span.addEventListener('click',function(){
     task.removeChild(list);
     },false);
-    //ここから完成ボタンの機能
-    //<input>要素を取得
-    var input = document.getElementsByTagName('input');
-    //<textarea>要素を取得
-    var textarea= document.getElementsByTagName('textarea');
-    //<br>要素を取得
-    var br = document.getElementsByTagName('br');
-    document.getElementById('complete').addEventListener('click',function(){
-      //すべての<input要素>をdisplay:noneに
-      for(var i = 0,len1 = input.length;i < len1; i++){
-        input[i].classList.toggle('complete');
-      }
-      //すべての<textarea>要素をdisplay:noneに
-      for(var x = 0,len2 = textarea.length;x < len2;x++){
-        textarea[x].classList.toggle('complete');
-      }
-      for(var y = 0,len1 = br.length;y < len1; y++){
-        br[y].classList.toggle('complete');
-      }
-      list.removeChild(span)
-    },false);
-  };
+  }
   //tbOfTargetにaddAndRemove関数を実装
   document.getElementById('btnOfTarget').addEventListener('click',function(){
     addAndRemove('answerOfTarget','taskOfTarget');
@@ -86,5 +65,30 @@ document.addEventListener('DOMContentLoaded',function(){
   document.getElementById('btnOfReal').addEventListener('click',function(){
     addAndRemove('answerOfReal','taskOfReal');
   },false);
-
+  //ここから完成ボタンの機能
+  var complete = document.getElementById('complete')
+  complete.addEventListener('click',function(){
+    //<input>要素を取得
+    var input = document.getElementsByTagName('input');
+    //<textarea>要素を取得
+    var textarea= document.getElementsByTagName('textarea');
+    //<br>要素を取得
+    var br = document.getElementsByTagName('br');
+    var li = document.getElementsByTagName('li');
+    var span = document.getElementsByTagName('span');
+    //すべての<input要素>をdisplay:noneに
+    for(var i = 0,len1 = input.length;i < len1; i++){
+      input[i].classList.toggle('complete');
+    }
+    //すべての<textarea>要素をdisplay:noneに
+    for(var x = 0,len2 = textarea.length;x < len2;x++){
+      textarea[x].classList.toggle('complete');
+    }
+    for(var y = 0,len3 = br.length;y < len3; y++){
+      br[y].classList.toggle('complete');
+    }
+    for(var z = r = 0,len4 = li.length;z < len4; z++){
+      li[z].removeChild(span[r]);
+    }
+  },false);
 },false);
