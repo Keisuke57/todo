@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 body{
-  margin: 0px 0px 20px 0px;
+  margin:0;
   padding: 0;
   font-family: "Hiragino Kaku Gothic";
 }
@@ -23,8 +23,29 @@ caption{
   margin-top: 20px;
 }
 th{
-  width: 200px;
   height: 200px;
+  width: 200px;
+}
+.heightType1{
+  height: 100px;
+}
+.heightType2{
+  height:120px;
+}
+.heightType3{
+  height: 140px;
+}
+.heightType4{
+  height: 140px;
+}
+.heightType5{
+  height: 110px;
+}
+.heightType6{
+  height: 150px;
+}
+.heightType7{
+  height: 50px;
 }
 td{
   vertical-align: top;
@@ -42,9 +63,6 @@ p{
 }
 .btn{
   position: relative;
-}
-.th-11{
-  height: 50px;
 }
 .far{
   font-size: 25px;
