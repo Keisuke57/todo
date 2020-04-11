@@ -2,28 +2,34 @@ document.addEventListener('DOMContentLoaded',function(){
   function addAndRemove(answer,task){
     //テキストボックスの値を取得
     var answer = document.getElementById(answer);
-    //<li>要素を生成
-    var list = document.createElement('li');
-    //テキストノードを生成して、<li>要素の直下に追加
-    var text = document.createTextNode(answer.value);
-    list.appendChild(text);
-    //テキストボックスの中身をリセット
-    answer.value="";
-    //<span class="far fa-trash-alt">を生成
-    var span = document.createElement('span');
-    var addclass = document.createAttribute('class');
-    addclass.value="far fa-trash-alt";
-    span.setAttributeNode(addclass);
-    list.appendChild(span);
-    //<div id="task">を取得
-    var task = document.getElementById(task);
-    //<div>要素の直下に<li>/<i>要素の順番で追加
-    task.appendChild(list);
+    var value = answer.value;
+    if(value ===""){
+      //処理なし
+    }else{
+      //テキストノードを生成
+      var text = document.createTextNode(answer.value);
+      //<li>要素を生成
+      var list = document.createElement('li');
+      //テキストノードを<li>要素に追加
+      list.appendChild(text);
+      //テキストボックスの中身をリセット
+      answer.value="";
+      //<span class="far fa-trash-alt">を生成
+      var span = document.createElement('span');
+      var addclass = document.createAttribute('class');
+      addclass.value="far fa-trash-alt";
+      span.setAttributeNode(addclass);
+      list.appendChild(span);
+      //<div id="task">を取得
+      var task = document.getElementById(task);
+      //<div>要素の直下に<li>/<i>要素の順番で追加
+      task.appendChild(list);
 
-    //<span>要素をクリックしたらテキストが削除される処理
-    span.addEventListener('click',function(){
-    task.removeChild(list);
-    },false);
+      //<span>要素をクリックしたらテキストが削除される処理
+      span.addEventListener('click',function(){
+      task.removeChild(list);
+      },false);
+    }
   }
   //tbOfTargetにaddAndRemove関数を実装
   document.getElementById('btnOfTarget').addEventListener('click',function(){
