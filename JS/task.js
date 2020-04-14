@@ -84,21 +84,27 @@ document.addEventListener('DOMContentLoaded',function(){
   //追加された<span>要素を取得
   var span = document.getElementsByTagName('span');
   complete.addEventListener('click',function(){
-    //すべての<input要素>をdisplay:noneに
-    for(var i = 0,len1 = input.length;i < len1; i++){
-      input[i].classList.toggle('complete');
-    }
-    //すべての<textarea>要素をdisplay:noneに
-    for(var x = 0,len2 = textarea.length;x < len2;x++){
-      textarea[x].classList.toggle('complete');
-    }
-    //すべての<br>要素をdisplay:noneに
-    for(var y = 0,len3 = br.length;y < len3; y++){
-      br[y].classList.toggle('complete');
-    }
-    //すべての<span>要素を<li要素>から削除
-    for(var z = r = 0,len4 = li.length;z < len4; z++){
-      li[z].removeChild(span[r]);
+    //確認メッセージを表示
+    var result = window.confirm('完成してよろしいですか？(一度完成するとタスク内容を変えることができなくなります。)');
+    if(result == true){
+      //すべての<input要素>をdisplay:noneに
+      for(var i = 0,len1 = input.length;i < len1; i++){
+        input[i].classList.toggle('complete');
+      }
+      //すべての<textarea>要素をdisplay:noneに
+      for(var x = 0,len2 = textarea.length;x < len2;x++){
+        textarea[x].classList.toggle('complete');
+      }
+      //すべての<br>要素をdisplay:noneに
+      for(var y = 0,len3 = br.length;y < len3; y++){
+        br[y].classList.toggle('complete');
+      }
+      //すべての<span>要素を<li要素>から削除
+      for(var z = r = 0,len4 = li.length;z < len4; z++){
+        li[z].removeChild(span[r]);
+      }
+    }else{
+      //処理しない
     }
   },false);
 },false);
