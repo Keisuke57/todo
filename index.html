@@ -24,7 +24,8 @@
                   <p>(Q.どうしても集中力が続かない作業の中から、自分にとって最も重要なものを選んで書き込んでください)</p>
                   <input type="text" id="answerOfTarget" placeholder="例文：「企画書の作成」、「もっと運動する」など" size="80" class="textbox">
                   <input type="button" id="btnOfTarget" value="追加"><br>
-                  <div id="taskOfTarget"></div>
+                  <div id="taskOfTarget">
+                  </div>
                 </td>
               </tr>
             </tbody>
@@ -112,7 +113,8 @@
             <tr>
               <th class="heightType3">4.質問型アクション</th>
               <td>
-                <p>(Q.1で選んだデイリータスクについて、それぞれ次のフォーマットに変換してください)<br>[自分の名前]は、[時間]に[場所]で[デイリータスク]をするか？</p>
+                <p>(Q.1で選んだデイリータスクについて、それぞれ次のフォーマットに変換してください)</p>
+                <p>[自分の名前]は、[時間]に[場所]で[デイリータスク]をするか？</p>
                 <textarea id="answerOfQuestion" placeholder="例：デイリータスク「企画書の文章の見直しをする」&#010;質問型アクション「山田太郎は、午前9時に会社の自分の席で企画書の見直しをするか？」など" rows="3" cols="80" class="textbox"></textarea>
                 <input type="button" id="btnOfQuestion" value="追加"><br>
                 <div id="taskOfQuestion"></div>
