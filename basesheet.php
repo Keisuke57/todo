@@ -9,7 +9,7 @@
   //ログインしているかを判定
   if(isset($_SESSION['EMAIL'])){
     //ログインしていた場合の処理
-    $logout = 'ログアウトは<a href="/php/Logout.php">こちら</a>';
+    $logout = '<a href="/php/Logout.php">ログアウト</a>';
   }else{
     header('Location:' . SITE_URL. '/login.php');
     exit;
@@ -36,10 +36,10 @@
           <div class="header-center">
             <nav>
               <ul>
-                <li class="linkOftop"><a href="./index.html">トップページ</a></li>
-                <li class="linkOfbasesheet"><a href="./basesheet.html">基本設定シート</a></li>
-                <li class="linkOfpracticesheet"><a href="./practicesheet.html">実践設定シート</a></li>
-                <li class="linkOfsimplesheet"><a href="./simplesheet.html">即効簡易版シート</a></li>
+                <li class="linkOftop"><a href="./index.php">トップページ</a></li>
+                <li class="linkOfbasesheet"><a href="./basesheet.php">基本設定シート</a></li>
+                <li class="linkOfpracticesheet"><a href="./practicesheet.php">実践設定シート</a></li>
+                <li class="linkOfsimplesheet"><a href="./simplesheet.php">即効簡易版シート</a></li>
               </ul>
             </nav>
           </div>
