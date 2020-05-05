@@ -9,7 +9,7 @@
   //ログインしているかを判定
   if(isset($_SESSION['EMAIL'])){
     //ログインしていた場合の処理
-    $logout = 'ログアウトは<a href="/php/Logout.php">こちら</a>';
+    $logout = '<a href="/php/Logout.php">ログアウト</a>';
   }else{
     header('Location:' . SITE_URL. '/login.php');
     exit;
@@ -35,10 +35,10 @@
           <div class="header-center">
             <nav>
               <ul>
-                <li class="linkOftop"><a href="./index.html">トップページ</a></li>
-                <li class="linkOfbasesheet"><a href="./basesheet.html">基本設定シート</a></li>
-                <li class="linkOfpracticesheet"><a href="./practicesheet.html">実践設定シート</a></li>
-                <li class="linkOfsimplesheet"><a href="./simplesheet.html">即効簡易版シート</a></li>
+                <li class="linkOftop"><a href="./index.php">トップページ</a></li>
+                <li class="linkOfbasesheet"><a href="./basesheet.php">基本設定シート</a></li>
+                <li class="linkOfpracticesheet"><a href="./practicesheet.php">実践設定シート</a></li>
+                <li class="linkOfsimplesheet"><a href="./simplesheet.php">即効簡易版シート</a></li>
               </ul>
             </nav>
           </div>
@@ -77,7 +77,7 @@
         <div class="container">
           <h2>それぞれの目的に合わせてご利用ください。</h2>
           <div class="selectsheets">
-            <a href="./basesheet.html" id="basesheet">
+            <a href="./basesheet.php" id="basesheet">
               <div class="basesheet-top">
                 「基本設定シート」
               </div>
@@ -85,7 +85,7 @@
                 初めてご利用になられる方、中長期的な目標がある方はこちら
               </div>
             </a>
-            <a href="./practicesheet.html" id="practicesheet">
+            <a href="./practicesheet.php" id="practicesheet">
               <div class="practicesheet-top">
                 「実践設定シート」
               </div>
@@ -93,7 +93,7 @@
                 基本設定が終わり、デイリータスクからご利用になられる方はこちら
               </div>
             </a>
-            <a href="./simplesheet.html" id="simplesheet">
+            <a href="./simplesheet.php" id="simplesheet">
               <div class="simplesheet-top">
                 「即効簡易版シート」
               </div>
