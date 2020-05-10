@@ -55,7 +55,7 @@
           <span class="fas fa-bars"></span>
         </div>
         <div class="container">
-          <h2><span class="indent">あなたのやる気を楽しく、</span><span class="indent">最大限に。</span></h2>
+          <h2>あなたのやる気を楽しく、最大限に。</h2>
         </div>
       </div>
       <div id="Introduction-wrapper" class="fadein">
