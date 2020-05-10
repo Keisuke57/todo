@@ -22,6 +22,7 @@
     <title>基本設定シート</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./CSS/stylesOfsheets.css">
+    <link rel="stylesheet" href="./CSS/responsive.css">
     <link href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" rel="stylesheet">
     <script type="text/javascript" src="./JS/basesheet.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -160,7 +161,7 @@
               「リバースプランニング」で設定したサブゴールの中から、もっとも締め切りが近いものを選んで、それを達成するために毎日やるべきタスクをいくつか考えてください。
             </div>
             <div class="setopacity sample">
-              <p class="nospace">例①：サブゴール「7日前までにリサーチと分析を終える」</p><p class="nospace">デイリータスク「くわしそうな人に話を聞く」「文献さいとから必要な資料を集める」「集めた資料を読み込む」など</p>
+              <p class="nospace">例①：サブゴール「7日前までにリサーチと分析を終える」</p><p class="nospace">デイリータスク「くわしそうな人に話を聞く」「文献サイトから必要な資料を集める」「集めた資料を読み込む」など</p>
             </div>
             <div class="setopacity sample">
               <p class="nospace">例②：サブゴール「14日後までに10㎞走る」</p><p class="nospace">デイリータスク「トレッドミルで1㎞走る」「いつものコースを2㎞走る」など</p>
@@ -222,7 +223,7 @@
                 </tbody>
                 <tbody>
                   <tr>
-                    <th>4.リバースプランング</th>
+                    <th>4.リバースプランニング</th>
                     <td id="tdOfReverce">
 
                     </td>
