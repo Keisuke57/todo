@@ -1,0 +1,281 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+body{
+  font-family: "Hiragino Kaku Gothic ProN", sans-serif;
+  background-color: #f7f7f7;
+}
+main{
+  margin-top:80px;
+}
+.container{
+  max-width: 1000px;
+  width:100%;
+  margin:0 auto;
+  padding: 0;
+}
+.inner{
+  width:80%;
+  margin: 0 auto;
+}
+.bar-nav{
+  position: fixed;
+  top: 15px;
+  left: 215px;
+  font-size: 30px;
+  z-index: 100;
+}
+.bar-nav span{
+  text-decoration: none;
+  cursor: pointer;
+  position: absolute;
+}
+header{
+  background-color: black;
+  width: 100%;
+  height: 60px;
+  position:fixed;
+  top:0;
+  z-index: 100;
+  display: none;
+}
+.linkOftop:hover{
+  background-color: blue;
+}
+.linkOfbasesheet:hover{
+  background-color: #FF9999;
+}
+.linkOfpracticesheet:hover{
+  background-color: #00cc33;
+}
+.linkOfsimplesheet:hover{
+  background-color: #FF9933;
+}
+.modal-nav{
+  color: white;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  position: relative;
+}
+.header-left span,.header-right a,.header-center li{
+  line-height: 60px;
+}
+.header-left,.header-right{
+  position: absolute;
+}
+.header-left{
+  left: 30px;
+}
+.header-left span{
+  text-decoration: none;
+  cursor: pointer;
+  width: 50px;
+  text-align: center;
+  font-size:30px;
+}
+.header-center li{
+  display: inline-block;
+  list-style: none;
+  font-weight: bold;
+  padding:0 20px;
+}
+header a{
+  text-decoration: none;
+  color: white;
+}
+.header-right{
+  right:0px;
+}
+.header-right a{
+  font-weight: bold;
+}
+h2{
+  text-align: center;
+  font-size: 35px;
+  color:black;
+  opacity: 0.7;
+}
+p,.setopacity{
+  color: black;
+  opacity: 0.8;
+}
+#basesheet-heading,.basesheet{
+  background-color: #FF9999;
+}
+#practicesheet-heading,.practicesheet{
+  background-color: #00cc33;
+}
+#simplesheet-heading,.simplesheet{
+  background-color: #FF9933;
+}
+.sheets-heading{
+  width: 80%;
+  height:400px;
+  color:white;
+  margin:0 auto;
+}
+.sheets-heading h2,.sheets-heading p{
+  color:white;
+  opacity:0.9;
+}
+.sheets-heading h2{
+  font-size:50px;
+  line-height: 150px;
+}
+.sheets-heading p{
+  font-size:17px;
+  letter-spacing:0.1em;
+}
+.top{
+  border-bottom: solid 1px;
+  text-align: center;
+  padding:0;
+}
+.bottom{
+  margin: 10px auto;
+  width: 80%;
+  text-align: left;
+}
+form{
+  text-align: center;
+  margin-top: 20px;
+}
+.textbox{
+  width:400px;
+  height:30px;
+  margin: 0 auto;
+  border-radius: 3px;
+}
+.btn{
+  margin-top: 10px;
+  width: 410px;
+  color: white;
+  border: solid 2px #67c5ff;
+  border-radius: 3px;
+  transition: .4s;
+  background: #67c5ff;
+}
+.btn:hover{
+  background: white;
+  color: #67c5ff;
+}
+.userstask{
+  margin-top: 20px;
+  color: black;
+  font-size: 20px;
+}
+.userstask span{
+  cursor: pointer;
+}
+.sample{
+  font-weight: bold;
+  margin: 10px 0;
+}
+.nospace{
+  margin: 0;
+  opacity: 1;
+}
+.item{
+  margin:100px 0;
+}
+.complete h2{
+  font-size:70px;
+  color:red;
+}
+.complete p{
+  font-size:20px;
+  font-weight:bold;
+}
+.complete span{
+  text-decoration:underline;
+  color:red;
+}
+.complete input{
+  display: block;
+  padding: 0.5em 1em;
+  border-radius: 4px;
+  color: #ffffff;
+  background-image: linear-gradient(45deg, #FFC107 0%, #ff8b5f 100%);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+  border-bottom: solid 3px #c58668;
+  width:410px;
+  height:100px;
+  margin:0 auto;
+  font-size:30px;
+  font-weight:bold;
+}
+.complete input:active{
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+  border-bottom: none;
+}
+.Real span{
+  font-weight:bold;
+  text-decoration:underline;
+  color:red;
+}
+/*ここからテーブルのスタイル*/
+.table{
+  width:800px;
+  margin: 0 auto;
+  table-layout: fixed;
+}
+caption{
+  margin-bottom: 10px;
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 30px;
+}
+th{
+  width: 200px;
+  height: 20px;
+}
+td{
+  overflow-wrap:break-word;
+}
+td{
+  vertical-align: top;
+}
+td p{
+  color: black;
+  opacity: 1;
+}
+td li,.userstask li{
+  margin-left: 5px;
+  overflow-wrap:break-word;
+}
+.height{
+  height: 50px;
+}
+/*モーダル用のスタイル*/
+.userstable{
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  z-index: 200;
+  height:  calc(100vh);
+  overflow: scroll;
+}
+.userstable span{
+  font-size: 20px;
+  padding-top: 10px;
+  cursor: pointer;
+}
+/* テキストのアニメーション */
+.fadein {
+  opacity : 0;
+  transform : translate(0, 100px);
+  transition : all 1s;
+}
+.fadein.active{
+  opacity : 1;
+  transform : translate(0, 0);
+}
