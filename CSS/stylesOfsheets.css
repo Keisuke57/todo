@@ -48,7 +48,7 @@ header{
   background-color: #FF9999;
 }
 .linkOfpracticesheet:hover{
-  background-color: #00cc33;
+  background-color: #33CC33	;
 }
 .linkOfsimplesheet:hover{
   background-color: #FF9933;
@@ -106,7 +106,7 @@ p,.setopacity{
   background-color: #FF9999;
 }
 #practicesheet-heading,.practicesheet{
-  background-color: #00cc33;
+  background-color: #33CC33	;
 }
 #simplesheet-heading,.simplesheet{
   background-color: #FF9933;
