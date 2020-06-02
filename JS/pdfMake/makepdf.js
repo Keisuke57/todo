@@ -1,4 +1,3 @@
-import htmlToPdfmake from
 document.addEventListener('DOMContentLoaded', function() {
   //日本語フォント読み込み
   pdfMake.fonts = {
