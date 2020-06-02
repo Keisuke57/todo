@@ -26,6 +26,9 @@
     <link href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" rel="stylesheet">
     <script type="text/javascript" src="./JS/basesheet.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./JS/pdfMake/pdfmake.min.js"></script>
+    <script src="./JS/pdfMake/vfs_fonts.js"></script>
+    <script src="./JS/pdfMake/makepdf.js"></script>
   </head>
   <body>
     <header>
@@ -180,13 +183,11 @@
         </div>
         </div>
       </div>
-      <?php
-      $basesheet = <<< EOF
       <div id="modal-show" class="userstable">
         <div class="container">
           <div class="inner">
             <span class="fas fa-times" id="modal-close"></span>
-            <table border="1" style="border-collapse: collapse" class="table">
+            <table border="1" style="border-collapse: collapse" class="table" id="table">
                 <caption>基本設定シート</caption>
                 <tbody>
                   <tr>
@@ -224,13 +225,10 @@
                   </tr>
                 </tbody>
             </table>
-              <a href="./test.php"><input type="button" value="PDF"></a>
+              <input type="button" value="PDF" id="makepdf">
           </div>
         </div>
       </div>
-      EOF;
-      echo $basesheet;
-      ?>
     </main>
     <script type="text/javascript" src="./JS/script.js"></script>
   </body>
