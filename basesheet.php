@@ -9,7 +9,7 @@
   //ログインしているかを判定
   if(isset($_SESSION['EMAIL'])){
     //ログインしていた場合の処理
-    $logout = '<a href="/php/Logout.php">ログアウト</a>';
+    $logout = '<a href="/php/logout.php">ログアウト</a>';
   }else{
     header('Location:' . SITE_URL. '/login.php');
     exit;
@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="./CSS/responsive.css">
     <link href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" rel="stylesheet">
     <script type="text/javascript" src="./JS/basesheet.js"></script>
+    <script type="text/javascript" src="./JS/makecsv.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   </head>
   <body>
@@ -184,7 +185,7 @@
         <div class="container">
           <div class="inner">
             <span class="fas fa-times" id="modal-close"></span>
-            <table border="1" style="border-collapse: collapse" class="table">
+            <table border="1" style="border-collapse: collapse" class="table" id="userstable">
                 <caption>基本設定シート</caption>
                 <tbody>
                   <tr>
@@ -227,6 +228,7 @@
                   </tr>
                 </tbody>
             </table>
+            <button><a id="csv" href="#" download="基本設定シート.csv" onclick="handleDownload()" align="right">CSV</a></button>
           </div>
         </div>
       </div>
