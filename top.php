@@ -21,7 +21,7 @@
     <meta charset="utf-8">
     <title>タスク管理</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./CSS/stylesOfindex.css">
+    <link rel="stylesheet" href="./CSS/stylesOftop.css">
     <link rel="stylesheet" href="./CSS/responsive.css">
     <link href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
