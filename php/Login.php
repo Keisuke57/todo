@@ -31,7 +31,7 @@ if($_SERVER['REQUEST_METHOD']=== 'POST'){
   if (password_verify($_POST['password'], $row['password'])) {
     session_regenerate_id(true); //session_idを新しく生成し、置き換える
     $_SESSION['EMAIL'] = $row['email'];
-    header('Location:'. SITE_URL . '/index.php');
+    header('Location:'. SITE_URL . '/top.php');
     exit;
   } else {
     $Invalid = 'メールアドレス又はパスワードが間違っています。';

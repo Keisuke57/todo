@@ -38,7 +38,7 @@
           <div class="header-center">
             <nav>
               <ul>
-                <li class="linkOftop"><a href="./index.php">トップページ</a></li>
+                <li class="linkOftop"><a href="./top.php">トップページ</a></li>
                 <li class="linkOfbasesheet"><a href="./basesheet.php">基本設定シート</a></li>
                 <li class="linkOfpracticesheet"><a href="./practicesheet.php">実践設定シート</a></li>
                 <li class="linkOfsimplesheet"><a href="./simplesheet.php">即効簡易版シート</a></li>
