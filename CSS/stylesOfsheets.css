@@ -269,6 +269,10 @@ td li,.userstask li{
   padding-top: 10px;
   cursor: pointer;
 }
+.csv{
+  text-decoration: none;
+  color: black;
+}
 /* テキストのアニメーション */
 .fadein {
   opacity : 0;
